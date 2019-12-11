@@ -1,0 +1,9 @@
+calculateJumps
+0 -> 0
+1 -> 6
+any other number -> can't happen
+
+calculateBarks
+0 -> 1
+1 -> 2
+any other number -> can't happen

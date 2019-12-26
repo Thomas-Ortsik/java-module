@@ -1,0 +1,8 @@
+getOutfitForToday
+1, 1 -> REDSOCKS, BEANIE
+4, 8 -> YELLOWSOCKS, CAP
+6, 4 -> GREENSOCKS, CAP
+0, 4 -> Error
+6, 0 -> Error
+8, 4 -> Error
+6, 13 -> Error

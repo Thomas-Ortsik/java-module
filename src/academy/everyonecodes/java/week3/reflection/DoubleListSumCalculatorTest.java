@@ -13,8 +13,16 @@ import static org.junit.jupiter.api.Assertions.*;
 class DoubleListSumCalculatorTest {
     DoubleListSumCalculator doubleListSumCalculator = new DoubleListSumCalculator();
 
+    @ParameterizedTest
+    @CsvSource({
+            "10, 1,9"
+    })
+    void calculateTest(double expected, double listItem1, double listItem2){
+        List<Double> input = List.of(listItem1,listItem2);
+        double result = doubleListSumCalculator.calculate(input);
+        Assertions.assertEquals(expected, result);
 
-
+    }
 
 
 

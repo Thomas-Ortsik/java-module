@@ -1,10 +1,13 @@
 package academy.everyonecodes.java.week5.set2.exercise5;
 
+import java.util.ArrayList;
+import java.util.List;
 import java.util.Optional;
 
 public class GotDataParser {
     public Optional<Character> parseLine(String textToParse) {
         String[] characterDetails = textToParse.split(";");
+
         if (characterDetails.length != 13){
             return Optional.empty();
         }

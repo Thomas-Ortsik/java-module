@@ -32,7 +32,9 @@ public class Character {
             return "male";
         }
         else {return "non-binary";}
+
     }
+
 
     public Character(String name, Optional<Integer> bookOfDeath, Optional<Integer> gender) {
         this.name = name;

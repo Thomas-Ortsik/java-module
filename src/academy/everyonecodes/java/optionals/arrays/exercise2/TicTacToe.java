@@ -14,14 +14,14 @@ public class TicTacToe {
         }
         return field;
     }
-    //is there an easier way to fill a String Array?
+    //is there an easier way to fill a String Array? | Yes: Arrays.fill()
 
 
     private void printGameField(String[][] field) {
         String linePrint = "";
-        for (int row = 0; row < field.length; row++) {
-            for (int column = 0; column < field[row].length; column++) {
-                linePrint += "[" + field[row][column] + "]";
+        for (String[] strings : field) {
+            for (int column = 0; column < strings.length; column++) {
+                linePrint += "[" + strings[column] + "]";
                 if (column == 2) {
                     linePrint += "\n";
                 }
@@ -50,14 +50,10 @@ public class TicTacToe {
     }
 
     private boolean hasWon(String a, String b, String c) {
-        if (a != "X" && a != "O") {
+        if (!a.equals("X") && !a.equals("O")) {
             return false;
         }
-        if (a == b && a == c) {
-            return true;
-        } else {
-            return false;
-        }
+        return a.equals(b) && a.equals(c);
 
     }
 
@@ -72,10 +68,7 @@ public class TicTacToe {
                 return true;
             }
         }
-        if (hasWon(field[0][0], field[1][1], field[2][2]) || hasWon(field[0][2], field[1][1], field[2][0])) {
-            return true;
-        }
-        return false;
+        return hasWon(field[0][0], field[1][1], field[2][2]) || hasWon(field[0][2], field[1][1], field[2][0]);
     }
 
     public void play() {

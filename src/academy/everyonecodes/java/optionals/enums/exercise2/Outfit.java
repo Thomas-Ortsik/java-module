@@ -7,4 +7,5 @@ public class Outfit {
     public String getDescription(){
         return "This outfit includes " + socks.getDescription() + " and " + headpiece.getDescription() + ".";
     }
+
 }

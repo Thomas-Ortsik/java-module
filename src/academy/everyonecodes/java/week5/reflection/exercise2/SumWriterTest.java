@@ -14,6 +14,6 @@ class SumWriterTest {
     void write(){
         Path pExpected = Path.of("src/academy/everyonecodes/java/week5/reflection/files/expected.csv");
         Path pResult = Path.of("src/academy/everyonecodes/java/week5/reflection/files/expected.csv");
-
+        sumWriter.write();
     }
 }

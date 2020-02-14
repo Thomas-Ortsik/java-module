@@ -15,8 +15,7 @@ public class SpecialNumbersCounter {
     private int countSpecialNumbers(List<Integer> numbers) {
         List<Integer> specialNumbers = List.of(3, 6, 9);
         int amountSpecialNumbers = 0;
-        for (int number : numbers
-        ) {
+        for (int number : numbers) {
             if (specialNumbers.contains(number)) {
                 amountSpecialNumbers++;
             }

@@ -25,7 +25,7 @@ public class AverageWriter {
     }
 
 
-    private Double average(List<Integer> numbers) {
+    Double average(List<Integer> numbers) {
         int size = numbers.size();
         int sum = 0;
         for (int number : numbers) {

@@ -11,7 +11,8 @@ class PictureNameExtractorTest {
     @CsvSource({
             "sunshine, 04847396SunshinePic.jpg",
             "hello world, 34829375hEllo-WORLDPic.jpg",
-            "a b c, 03823944a-b-cPic.jpg"
+            "a b c, 03823944a-b-cPic.jpg",
+            "'', 03029292Pic.jpg"
     })
     void extract(String expected, String input) {
         String result = pictureNameExtractor.extract(input);

@@ -28,6 +28,30 @@ class AverageWriterTest {
         Assertions.assertEquals(expected, result);
     }
 
+    @Test
+    void average(){
+        List<Integer> input = List.of(10);
+        Double expected = 10.0;
+        Double result = averageWriter.average(input);
+        Assertions.assertEquals(expected, result);
+    }
+
+    @Test
+    void average2(){
+        List<Integer> input = List.of(10,0);
+        Double expected = 5.0;
+        Double result = averageWriter.average(input);
+        Assertions.assertEquals(expected, result);
+    }
+
+    @Test
+    void average3(){
+        List<Integer> input = List.of(10,5);
+        Double expected = 7.5;
+        Double result = averageWriter.average(input);
+        Assertions.assertEquals(expected, result);
+    }
+
     @AfterEach
     void delete() {
         try {

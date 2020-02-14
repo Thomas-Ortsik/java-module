@@ -12,7 +12,8 @@ class VowelCounterTest {
             "5, aeiou",
             "3, hello world",
             "0, prrrbprrrb",
-            "0, ''"
+            "0, ''",
+            "5, AEIOU"
     })
     void count(int expected, String input) {
         int result = vowelCounter.count(input);

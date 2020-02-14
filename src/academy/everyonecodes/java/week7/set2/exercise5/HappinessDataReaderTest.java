@@ -20,7 +20,7 @@ class HappinessDataReaderTest {
         HappinessRecord resultSeventyFifthEntry = result.get(74);
 
         Assertions.assertTrue(expectedFirstEntry.equals(resultFirstEntry));
-        Assertions.assertTrue(expectedLastEntry.hashCode() == resultLastEntry.hashCode());
+        Assertions.assertEquals(expectedLastEntry.hashCode(), resultLastEntry.hashCode());
         Assertions.assertTrue(expectedSeventyFifthEntry.equals(resultSeventyFifthEntry));
     }
 

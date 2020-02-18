@@ -1,0 +1,11 @@
+getEmptyGameField
+-> {{" "," "," "}{" "," "," "}{" "," "," "}}
+
+hasWon
+X,O,O -> false
+X,X,X -> true
+O,O,O -> true
+O,X,O -> false
+
+isGameOver
+don't know how to write a test case for this scenario

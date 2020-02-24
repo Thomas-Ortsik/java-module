@@ -1,4 +1,4 @@
-package academy.everyonecodes.java.optionals.enums.exercise2;
+package academy.everyonecodes.java.optionals.enums.secondtry.exercise2;
 
 import java.time.DayOfWeek;
 import java.time.Month;
@@ -11,17 +11,16 @@ public class Drawer {
         List<DayOfWeek> greenSockDays = List.of(DayOfWeek.SATURDAY, DayOfWeek.SUNDAY);
         List<Month> coldMonths = List.of(Month.NOVEMBER, Month.DECEMBER, Month.JANUARY, Month.FEBRUARY);
         if (day == DayOfWeek.MONDAY) {
-            outfit.socks = Socks.REDSOCKS;
+            outfit.setSocks(Socks.REDSOCKS);
         } else if (greenSockDays.contains(day)) {
-            outfit.socks = Socks.GREENSOCKS;
+            outfit.setSocks(Socks.GREENSOCKS);
         } else {
-            outfit.socks = Socks.YELLOWSOCKS;
+            outfit.setSocks(Socks.YELLOWSOCKS);
         }
-        if ( coldMonths.contains(month)){
-            outfit.headpiece = Headpiece.BEANIE;
-        }
-        else {
-            outfit.headpiece = Headpiece.CAP;
+        if (coldMonths.contains(month)) {
+            outfit.setHeadpiece(Headpiece.BEANIE);
+        } else {
+            outfit.setHeadpiece(Headpiece.CAP);
         }
         return outfit;
     }

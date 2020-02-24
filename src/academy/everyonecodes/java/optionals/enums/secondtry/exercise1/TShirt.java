@@ -1,4 +1,4 @@
-package academy.everyonecodes.java.optionals.enums.exercise1;
+package academy.everyonecodes.java.optionals.enums.secondtry.exercise1;
 
 public class TShirt {
     private String color;
@@ -25,10 +25,6 @@ public class TShirt {
 
     public void setSize(Size size) {
         this.size = size;
-    }
-
-    public void setPrice(int price) {
-        this.price = price;
     }
 
     public int getPrice() {

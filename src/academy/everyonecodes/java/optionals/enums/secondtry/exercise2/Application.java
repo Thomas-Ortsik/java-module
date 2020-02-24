@@ -1,4 +1,4 @@
-package academy.everyonecodes.java.optionals.enums.exercise2;
+package academy.everyonecodes.java.optionals.enums.secondtry.exercise2;
 
 import java.time.DayOfWeek;
 import java.time.Month;
@@ -12,5 +12,5 @@ public class Application {
         Month month = calendar.askForMonth();
         Outfit outfit = drawer.getOutfitForToday(day, month);
         mirror.sayHowItLooks(day, month, outfit);
-        }
     }
+}

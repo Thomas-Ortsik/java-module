@@ -1,4 +1,4 @@
-package academy.everyonecodes.java.optionals.enums.exercise2;
+package academy.everyonecodes.java.optionals.enums.secondtry.exercise2;
 
 public enum Socks {
     GREENSOCKS("green socks with holes"),

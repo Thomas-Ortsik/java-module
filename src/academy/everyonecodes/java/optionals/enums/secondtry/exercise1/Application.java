@@ -1,4 +1,4 @@
-package academy.everyonecodes.java.optionals.enums.exercise1;
+package academy.everyonecodes.java.optionals.enums.secondtry.exercise1;
 
 import java.util.List;
 

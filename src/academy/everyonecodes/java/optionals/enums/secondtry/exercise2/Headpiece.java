@@ -1,4 +1,4 @@
-package academy.everyonecodes.java.optionals.enums.exercise2;
+package academy.everyonecodes.java.optionals.enums.secondtry.exercise2;
 
 public enum Headpiece {
     BEANIE("a warm beanie for the cold months"),
@@ -7,11 +7,11 @@ public enum Headpiece {
 
     public final String description;
 
-    private Headpiece(String description){
+    Headpiece(String description) {
         this.description = description;
     }
 
-    public String getDescription(){
+    public String getDescription() {
         return this.description;
     }
 }
